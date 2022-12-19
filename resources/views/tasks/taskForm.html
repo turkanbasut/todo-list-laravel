@@ -1,0 +1,7 @@
+{!! Form::open(['action' => 'TaskController@store', 'method' => 'POST']) !!}
+{{ Form::label('title', 'Title') }}
+{{ Form::text('title', '', ['placeholder' => 'Task Title']) }}
+{{ Form::label('description', 'Description') }}
+{{ Form::textarea('description', '', ['placeholder' => 'Task Description']) }}
+{{ Form::submit('Submit') }}
+{!! Form::close() !!}
