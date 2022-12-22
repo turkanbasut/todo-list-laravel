@@ -27,19 +27,36 @@ class TaskController extends Controller
         $task->description = $request->input('description');
         $task->save();
 
-        return redirect('/tasks')->with('success', 'Task added successfully!');
+        return redirect('/')->with('success', 'Task added successfully!');
     }
 
-    // Task güncelleme yöntemi
+    public function edit($id)
+    {
+        // Find the task with the given id
+        $task = Task::find($id);
+
+        // Return the edit view with the task information
+        return view('tasks.edit', ['task' => $task]);
+    }
+
     public function update(Request $request, $id)
     {
+        // Validate the request data
+        $request->validate([
+            'name' => 'required|max:255',
+            'description' => 'nullable',
+        ]);
+
+        // Find the task with the given id and update its information
         $task = Task::find($id);
         $task->name = $request->input('name');
         $task->description = $request->input('description');
         $task->save();
 
-        return redirect('/tasks')->with('success', 'Task updated successfully!');
+        // Redirect to the task list page with a success message
+        return redirect('/')->with('success', 'Task updated successfully');
     }
+
 
 // Task silme yöntemi
     public function destroy($id)
