@@ -5,7 +5,7 @@
 </head>
 <body>
 <div class="container">
-    <h1>Task List</h1>
+    <h1 style="color: white">Task List</h1>
     <br>
     <form action="/tasks/create">
         <button type="submit">AddNew</button>

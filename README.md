@@ -14,10 +14,14 @@ Run the migrations for the database:
 
 ` php artisan migrate
 `
+
 Start the server:
+
 ` php artisan serve
 `
+
 The application should now be running on http://localhost:8000.
+
 
 **Prerequisites**
 PHP
@@ -32,5 +36,5 @@ Author
 License
 This project is licensed under the apachi License - see the LICENSE.md file for details.
 
-
+![](../Desktop/Ekran Resmi 2022-12-23 10.22.47.png)
 
