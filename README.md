@@ -1,6 +1,10 @@
 **Project Title**
 This project is a task application using the Laravel framework. In this application, users can add, edit, and delete tasks. MySQL is used as the database.
 
+
+![plot](./resources/project_image/tasks.png)
+
+
 **Getting Started**
 To run this project on your own machine, follow these steps:
 
@@ -37,4 +41,3 @@ License
 This project is licensed under the apachi License - see the LICENSE.md file for details.
 
 
-![plot](./resources/project_image/tasks.png)
